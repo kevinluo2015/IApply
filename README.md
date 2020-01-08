@@ -66,3 +66,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### compatibility with IE11
+
+1. install react-app-polyfill 
+2. import 'react-app-polyfill/ie11' at the first line of index.js
+3. add "ie 11" in "browserslist" of package.json 
+4. update react-scripts to version 3.2.0
+
+### conduct redux
+
+1. install 'redux' 'react-redux' 'redux-thunk'
+2. import at 'index.js'
+import {Provider} from 'react-redux';
+import {createStore,applyMiddleware} from 'redux';
+import rootReducer from './Redux/index'
+import thunk from 'redux-thunk';
+3. 
+
